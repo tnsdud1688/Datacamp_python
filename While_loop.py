@@ -34,3 +34,39 @@ house = [["hallway", 11.25],
 # Build a for loop from scratch
 for x in house :
     print("the " + str(x[0]) + " is " + str(x[1]) + " sqm")
+
+# Definition of dictionary
+europe = {'spain':'madrid', 'france':'paris', 'germany':'bonn', 
+          'norway':'oslo', 'italy':'rome', 'poland':'warsaw', 'australia':'vienna' }
+          
+# Iterate over europe
+for key, value in europe.items() :
+    print("the capital of " + str(key) + " is " + str(value))
+   
+# Import numpy as np
+import numpy as np
+
+# For loop over np_height
+for x in np_height:
+    print(str(x) + " inches")
+
+# For loop over np_baseball
+for x in np.nditer(np_baseball):
+    print(x)
+    
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Iterate over rows of cars
+for lab, row in cars.iterrows() :
+    print (lab)
+    print (row)
+    
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Adapt for loop
+for lab, row in cars.iterrows() :
+    print (lab + ": " + str(row["cars_per_cap"]))
