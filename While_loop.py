@@ -236,3 +236,10 @@ for i in range(250) :
 np_aw_t = np.transpose(np.array(all_walks))
 plt.plot(np_aw_t)
 plt.show()
+
+# Select last row from np_aw_t: ends
+ends = np_aw_t[-1,:]
+
+# Plot histogram of ends, display plot
+plt.hist(ends)
+plt.show()
