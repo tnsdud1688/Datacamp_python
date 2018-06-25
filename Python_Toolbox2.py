@@ -26,3 +26,21 @@ new_fellowship = [member if len(member) >= 7 else '' for member in fellowship]
 # Print the new list
 print(new_fellowship)
 
+# Extract the created_at column from df: tweet_time
+tweet_time = df['created_at']
+
+# Extract the clock time: tweet_clock_time
+tweet_clock_time = [entry[11:19] for entry in tweet_time if entry[17:19] == '19']
+
+# Print the extracted times
+print(tweet_clock_time)
+
+# Zip lists: zipped_lists
+zipped_lists = zip(feature_names, row_vals)
+
+# Create a dictionary: rs_dict
+rs_dict = dict(zipped_lists)
+
+# Print the dictionary
+print(rs_dict)
+
