@@ -75,3 +75,14 @@ d = np.recfromcsv(file, delimiter = ',', names=True, dtype=None)
 # Print out first three entries of d
 print(d[:3])
 
+# Import pandas as pd
+import pandas as pd
+
+# Assign the filename: file
+file = 'titanic.csv'
+
+# Read the file into a DataFrame: df
+df = pd.read_csv(file)
+
+# View the head of the DataFrame
+print(df.head())
